@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phan Văn Huy — Flutter Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Phan Văn Huy — Flutter Developer building cross-platform mobile products with modern architecture."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="#top">Phan Văn Huy</a>
+        <div class="nav__right">
+          <button
+            class="lang-switch"
+            id="langToggle"
+            type="button"
+            data-lang="en"
+            data-i18n-aria="lang.switch"
+            aria-label="Switch language"
+          >
+            <span class="lang-switch__current" id="langCurrent">EN</span>
+            <span class="lang-switch__divider" aria-hidden="true"></span>
+            <span class="lang-switch__next">VI</span>
+          </button>
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            type="button"
+            data-i18n-aria="nav.open"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="nav__links" id="navLinks">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#project" data-i18n="nav.project">Project</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#stack" data-i18n="nav.stack">Stack</a>
+            <a href="#contact" class="nav__cta" data-i18n="nav.contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="reveal">
+            <p class="hero__eyebrow" data-i18n="hero.eyebrow">Portfolio · Mobile</p>
+            <h1 class="hero__name">Phan Văn Huy</h1>
+            <p class="hero__role" data-i18n="hero.role">Flutter Developer</p>
+            <p class="hero__tagline" data-i18n="hero.tagline">
+              I build cross-platform mobile products that solve real-world
+              problems — with Flutter and modern architecture.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#project" data-i18n="hero.ctaProjects"
+                >View Projects</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="assets/cv/PhanVanHuy-CV.png"
+                download="PhanVanHuy-CV.png"
+                data-i18n="hero.ctaCv"
+                >Download CV</a
+              >
+            </div>
+            <div class="hero__links">
+              <a href="https://github.com/PVanHuy" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+              <a href="mailto:vanhuy812.dev@gmail.com">Email</a>
+              <a href="assets/cv/PhanVanHuy-CV.png" target="_blank" rel="noopener"
+                >CV</a
+              >
+            </div>
+          </div>
+          <div class="hero__portrait reveal reveal-delay-2">
+            <div class="hero__portrait-frame">
+              <img
+                src="assets/me/avatar.png"
+                alt="Portrait of Phan Văn Huy"
+                width="720"
+                height="900"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <span data-i18n="hero.scroll">Scroll</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="about.label">About me</p>
+          <h2 class="section-title reveal" data-i18n="about.title">
+            Building apps people rely on
+          </h2>
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p data-i18n="about.p1">
+                Flutter developer with 1+ year of experience building
+                cross-platform Android &amp; iOS apps for real business domains —
+                from ride booking and food delivery to logistics, garage
+                operations, and e-commerce.
+              </p>
+              <p data-i18n="about.p2">
+                I work across Flutter and React Native, integrate REST APIs,
+                WebSocket, and Firebase, and structure code with Clean
+                Architecture / MVVM so products stay maintainable as they grow.
+              </p>
+              <p data-i18n="about.p3">
+                I care most about products that solve concrete problems for
+                users — clear flows, solid realtime, and release-ready delivery.
+              </p>
+              <p class="about__domains-label" data-i18n="about.domainsLabel">
+                Domains I've worked in
+              </p>
+              <div class="tech-row about__domains">
+                <span class="chip" data-i18n="domain.trip">Trip &amp; fleet management</span>
+                <span class="chip" data-i18n="domain.garage">Bus station / garage ops</span>
+                <span class="chip" data-i18n="domain.logistics">Import–export logistics</span>
+                <span class="chip" data-i18n="domain.fengshui">Feng shui marketplace</span>
+                <span class="chip" data-i18n="domain.food">Food delivery</span>
+                <span class="chip" data-i18n="domain.ride">Ride booking</span>
+                <span class="chip" data-i18n="domain.ecommerce">E-commerce</span>
+                <span class="chip" data-i18n="domain.booking">On-demand booking</span>
+              </div>
+            </div>
+            <div class="about__stats reveal reveal-delay-1">
+              <div class="stat">
+                <strong>1+</strong>
+                <span data-i18n="about.stat1">Year of mobile experience</span>
+              </div>
+              <div class="stat">
+                <strong>3</strong>
+                <span data-i18n="about.stat2">Apps published on Google Play</span>
+              </div>
+              <div class="stat">
+                <strong>Flutter</strong>
+                <span data-i18n="about.stat3">Primary stack · also RN</span>
+              </div>
+              <div class="stat">
+                <strong>GPA 3.5</strong>
+                <span data-i18n="about.stat4">IT · Academic scholarship ×2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured" id="project">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="project.label">Selected project</p>
+          <h2 class="section-title reveal" data-i18n="project.title">Featured work</h2>
+          <p class="section-lead reveal" data-i18n="project.lead">
+            A deep dive into SOS Connect — the product I designed and developed
+            end-to-end as a full-featured emergency rescue app.
+          </p>
+
+          <div class="featured__panel reveal">
+            <div class="featured__top">
+              <div>
+                <p class="featured__kicker" data-i18n="project.kicker">
+                  Personal project · Jul 2026 – Present
+                </p>
+                <h3 class="featured__name">SOS Connect</h3>
+                <p class="featured__subtitle" data-i18n="project.subtitle">
+                  Emergency Rescue &amp; Community Support Platform
+                </p>
+                <p class="featured__desc" data-i18n="project.desc">
+                  A mobile application that connects people in emergency
+                  situations with nearby volunteers and rescue teams — from SOS
+                  reporting to realtime coordination and safe completion.
+                </p>
+                <div class="featured__meta">
+                  <span
+                    ><strong data-i18n="project.role">Role</strong>
+                    <span data-i18n="project.roleValue"
+                      >Mobile Developer / Project Developer</span
+                    ></span
+                  >
+                  <span
+                    ><strong data-i18n="project.platform">Platform</strong> Android ·
+                    iOS</span
+                  >
+                </div>
+                <div class="tech-row">
+                  <span class="chip">Flutter</span>
+                  <span class="chip">GetX</span>
+                  <span class="chip">MVVM</span>
+                  <span class="chip">WebSocket</span>
+                  <span class="chip">FCM</span>
+                  <span class="chip">Flutter Map</span>
+                  <span class="chip">GitHub Actions</span>
+                </div>
+                <div class="featured__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://github.com/PVanHuy/sos_connect"
+                    target="_blank"
+                    rel="noopener"
+                    data-i18n="project.github"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="phone-stage"
+                data-i18n-aria="project.screenshots"
+                aria-label="SOS Connect app screenshots"
+              >
+                <div class="phone phone--left">
+                  <img
+                    src="assets/images_app/send_sos.jpg"
+                    alt="SOS Connect — send SOS form"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="phone phone--center">
+                  <img
+                    src="assets/images_app/view_routes_event.jpg"
+                    alt="SOS Connect — route navigation"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="phone phone--right">
+                  <img
+                    src="assets/images_app/chat.jpg"
+                    alt="SOS Connect — rescue chat"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="story-grid">
+              <article class="story-card">
+                <h3 data-i18n="project.problemTitle">The problem</h3>
+                <p data-i18n="project.problemText">
+                  When an incident happens, people need to quickly share their
+                  location and situation with those who can help — nearby
+                  volunteers or organized rescue teams.
+                </p>
+              </article>
+              <article class="story-card">
+                <h3 data-i18n="project.solutionTitle">The solution</h3>
+                <p data-i18n="project.solutionText">
+                  SOS Connect lets users send an SOS with location, photos, and
+                  incident details. Support forces can find nearby requests,
+                  accept missions, navigate to the scene, and coordinate in
+                  realtime chat until the person is safe.
+                </p>
+              </article>
+              <article class="story-card story-card--wide">
+                <h3 data-i18n="project.featuresTitle">Key features</h3>
+                <ul class="feature-list">
+                  <li data-i18n="project.f1">SOS emergency reporting</li>
+                  <li data-i18n="project.f2">Realtime rescue chat</li>
+                  <li data-i18n="project.f3">Location &amp; map clustering</li>
+                  <li data-i18n="project.f4">In-app route navigation</li>
+                  <li data-i18n="project.f5">Push notifications (FCM)</li>
+                  <li data-i18n="project.f6">Rescue team management</li>
+                  <li data-i18n="project.f7">SOS status tracking</li>
+                  <li data-i18n="project.f8">AI assistant &amp; weather info</li>
+                </ul>
+              </article>
+              <article class="story-card story-card--wide">
+                <h3 data-i18n="project.challengesTitle">Technical challenges</h3>
+                <ul class="challenge-list">
+                  <li>
+                    <strong data-i18n="project.c1Title">Realtime communication</strong>
+                    <span data-i18n="project.c1Text"
+                      >Implemented Socket.IO-based realtime messaging for SOS
+                      coordination and chat scoped by sosId.</span
+                    >
+                  </li>
+                  <li>
+                    <strong data-i18n="project.c2Title">Map &amp; location</strong>
+                    <span data-i18n="project.c2Text"
+                      >Built SOS visualization with OpenStreetMap, map clustering,
+                      current location, and OSRM-powered in-app routing.</span
+                    >
+                  </li>
+                  <li>
+                    <strong data-i18n="project.c3Title">Emergency workflow</strong>
+                    <span data-i18n="project.c3Text"
+                      >Designed separate flows for victims and rescue teams —
+                      from SOS creation through acceptance to rescue
+                      completion.</span
+                    >
+                  </li>
+                  <li>
+                    <strong data-i18n="project.c4Title">CI/CD</strong>
+                    <span data-i18n="project.c4Text"
+                      >Configured GitHub Actions to automate Android APK/AAB builds
+                      and prepare signed releases for Google Play.</span
+                    >
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="gallery">
+              <h4 class="gallery__title" data-i18n="project.gallery">Product screens</h4>
+              <div class="gallery__track">
+                <button class="gallery__item" type="button" data-gallery-index="0" aria-label="Onboarding 1">
+                  <img src="assets/images_app/onboarding_step1.jpg" alt="Onboarding 1" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="1" aria-label="Onboarding 2">
+                  <img src="assets/images_app/onboarding_step2.jpg" alt="Onboarding 2" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="2" aria-label="Onboarding 3">
+                  <img src="assets/images_app/onboarding_step3.jpg" alt="Onboarding 3" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="3" aria-label="Login">
+                  <img src="assets/images_app/login.jpg" alt="Login" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="4" aria-label="Register">
+                  <img src="assets/images_app/register.jpg" alt="Register" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="5" aria-label="Verify OTP">
+                  <img src="assets/images_app/verify_otp.jpg" alt="Verify OTP" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="6" aria-label="Forgot password">
+                  <img src="assets/images_app/forget_password.jpg" alt="Forgot password" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="7" aria-label="Create new password">
+                  <img src="assets/images_app/create_new_password.jpg" alt="Create new password" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="8" aria-label="Map overview">
+                  <img src="assets/images_app/map.jpg" alt="Map overview" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="9" aria-label="Map zoom">
+                  <img src="assets/images_app/map_zoom.jpg" alt="Map zoom" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="10" aria-label="Event on map">
+                  <img src="assets/images_app/view_event_map.jpg" alt="Event on map" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="11" aria-label="Route to incident">
+                  <img src="assets/images_app/view_routes_event.jpg" alt="Route to incident" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="12" aria-label="Support — SOS types">
+                  <img src="assets/images_app/ui_support_2.jpg" alt="Support — SOS types" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="13" aria-label="Support — SOS list">
+                  <img src="assets/images_app/ui_support.jpg" alt="Support — SOS list" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="14" aria-label="Send SOS">
+                  <img src="assets/images_app/send_sos.jpg" alt="Send SOS" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="15" aria-label="Send SOS filled">
+                  <img src="assets/images_app/send_sos_2.jpg" alt="Send SOS filled" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="16" aria-label="My support requests">
+                  <img src="assets/images_app/activity_support_me.jpg" alt="My support requests" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="17" aria-label="SOS received">
+                  <img src="assets/images_app/sos_received.jpg" alt="SOS received" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="18" aria-label="Your SOS">
+                  <img src="assets/images_app/your_sos.jpg" alt="Your SOS" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="19" aria-label="Incident photo">
+                  <img src="assets/images_app/view_photo_full.jpg" alt="Incident photo" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="20" aria-label="Active rescue missions">
+                  <img src="assets/images_app/activity_receiving.jpg" alt="Active rescue missions" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="21" aria-label="Rescue complete">
+                  <img src="assets/images_app/rescue_complete.jpg" alt="Rescue complete" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="22" aria-label="SOS chat">
+                  <img src="assets/images_app/chat.jpg" alt="SOS chat" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="23" aria-label="Team chat">
+                  <img src="assets/images_app/chat_team.jpg" alt="Team chat" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="24" aria-label="Notifications">
+                  <img src="assets/images_app/notification.jpg" alt="Notifications" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="25" aria-label="System notifications">
+                  <img src="assets/images_app/notification_2.jpg" alt="System notifications" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="26" aria-label="Rescue teams">
+                  <img src="assets/images_app/view_list_team.jpg" alt="Rescue teams" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="27" aria-label="Team details">
+                  <img src="assets/images_app/list_team_details.jpg" alt="Team details" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="28" aria-label="Team info">
+                  <img src="assets/images_app/view_info_team.jpg" alt="Team info" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="29" aria-label="Join requests">
+                  <img src="assets/images_app/list_request_team.jpg" alt="Join requests" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="30" aria-label="Team members">
+                  <img src="assets/images_app/view_member_team.jpg" alt="Team members" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="31" aria-label="Profile">
+                  <img src="assets/images_app/profile.jpg" alt="Profile" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="32" aria-label="Personal info">
+                  <img src="assets/images_app/information_you.jpg" alt="Personal info" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="33" aria-label="Change password">
+                  <img src="assets/images_app/change_password.jpg" alt="Change password" loading="lazy" />
+                </button>
+                <button class="gallery__item" type="button" data-gallery-index="34" aria-label="AI assistant">
+                  <img src="assets/images_app/AI_CHAT.jpg" alt="AI assistant" loading="lazy" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="exp.label">Career</p>
+          <h2 class="section-title reveal" data-i18n="exp.title">
+            Professional experience
+          </h2>
+          <p class="section-lead reveal" data-i18n="exp.lead">
+            Production Flutter work across transportation, logistics,
+            marketplace, delivery, and on-demand booking products.
+          </p>
+
+          <div class="exp-list">
+            <article class="exp-company reveal">
+              <div class="exp-company__head">
+                <div>
+                  <h3>CIT Technology Solutions Co., Ltd.</h3>
+                  <p data-i18n="exp.role">Mobile Developer</p>
+                </div>
+                <span class="exp-company__period" data-i18n="exp.period"
+                  >May 2025 – May 2026</span
+                >
+              </div>
+              <p class="exp-company__summary" data-i18n="exp.summary">
+                Developed and maintained Flutter apps for Android &amp; iOS —
+                translating Figma designs into production UI, implementing
+                authentication, profile, booking, and e-commerce flows, and
+                integrating APIs and third-party services. Beyond the highlighted
+                products, I also contributed to company projects covering
+                trip/fleet management, garage operations, import–export
+                logistics, a feng shui marketplace, food delivery, and ride
+                booking. Collaborated daily with Backend, UI/UX, QA, and Business
+                Analysts.
+              </p>
+              <div class="project-grid">
+                <div class="project-card">
+                  <h4>Vương Kim Bảo</h4>
+                  <p class="stack">Flutter · GetX</p>
+                  <ul>
+                    <li data-i18n="exp.vkb1">Full UI from Figma</li>
+                    <li data-i18n="exp.vkb2">Profile management</li>
+                    <li data-i18n="exp.vkb3">E-commerce · cart · checkout</li>
+                    <li data-i18n="exp.vkb4">HTML content integration</li>
+                  </ul>
+                </div>
+                <div class="project-card">
+                  <h4 data-i18n="exp.tycaTitle">Tyca — Driver &amp; Delivery</h4>
+                  <p class="stack">Flutter · VietMap · WebSocket · FCM</p>
+                  <ul>
+                    <li data-i18n="exp.tyca1">Booking flows</li>
+                    <li data-i18n="exp.tyca2">Realtime tracking</li>
+                    <li data-i18n="exp.tyca3">Order updates &amp; chat</li>
+                    <li data-i18n="exp.tyca4">Push notifications</li>
+                  </ul>
+                </div>
+                <div class="project-card">
+                  <h4 data-i18n="exp.hevaTitle">Heva — Home Haircut</h4>
+                  <p class="stack">Flutter · Bloc/Cubit · VietMap · 9Pay</p>
+                  <ul>
+                    <li data-i18n="exp.heva1">Appointment booking</li>
+                    <li data-i18n="exp.heva2">Payment gateway</li>
+                    <li data-i18n="exp.heva3">Booking history</li>
+                    <li data-i18n="exp.heva4">Profile management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-more">
+                <p class="exp-more__label" data-i18n="exp.moreLabel">
+                  Also contributed to company projects in
+                </p>
+                <div class="tech-row">
+                  <span class="chip" data-i18n="domain.trip">Trip &amp; fleet management</span>
+                  <span class="chip" data-i18n="domain.garage">Bus station / garage ops</span>
+                  <span class="chip" data-i18n="domain.logistics">Import–export logistics</span>
+                  <span class="chip" data-i18n="domain.fengshui">Feng shui marketplace</span>
+                  <span class="chip" data-i18n="domain.food">Food delivery</span>
+                  <span class="chip" data-i18n="domain.ride">Ride booking</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="stack.label">Capabilities</p>
+          <h2 class="section-title reveal" data-i18n="stack.title">Tech stack</h2>
+          <p class="section-lead reveal" data-i18n="stack.lead">
+            Tools I use daily to design, build, integrate, and ship mobile
+            products.
+          </p>
+          <div class="tech-grid">
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Fl</div>
+              <span>Flutter</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Da</div>
+              <span>Dart</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">RN</div>
+              <span>React Native</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Rv</div>
+              <span>Riverpod</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Bl</div>
+              <span>Bloc / Cubit</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Gx</div>
+              <span>GetX</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">API</div>
+              <span>REST · Dio</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">WS</div>
+              <span>WebSocket</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Fb</div>
+              <span>Firebase · FCM</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">CA</div>
+              <span>Clean Architecture</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Map</div>
+              <span>Flutter Map · VietMap</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">CI</div>
+              <span>GitHub Actions</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Fi</div>
+              <span>Figma</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Pm</div>
+              <span>Postman</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">Git</div>
+              <span>Git · GitHub</span>
+            </div>
+            <div class="tech-item reveal">
+              <div class="tech-item__icon">GP</div>
+              <span>Google Play Console</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="flow.label">Process</p>
+          <h2 class="section-title reveal" data-i18n="flow.title">
+            My development workflow
+          </h2>
+          <p class="section-lead reveal" data-i18n="flow.lead">
+            From design handoff to a release-ready build — how I take a feature
+            from idea to production.
+          </p>
+          <div class="workflow">
+            <div class="flow-step reveal">
+              <div class="flow-step__num">01</div>
+              <h3 data-i18n="flow.s1">Figma</h3>
+              <p data-i18n="flow.s1d">Review screens, spacing, and interaction states.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-1">
+              <div class="flow-step__num">02</div>
+              <h3 data-i18n="flow.s2">Architecture</h3>
+              <p data-i18n="flow.s2d">Define layers, models, and state boundaries.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-2">
+              <div class="flow-step__num">03</div>
+              <h3 data-i18n="flow.s3">UI</h3>
+              <p data-i18n="flow.s3d">Build responsive, reusable Flutter widgets.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-3">
+              <div class="flow-step__num">04</div>
+              <h3 data-i18n="flow.s4">API Integration</h3>
+              <p data-i18n="flow.s4d">Wire REST, WebSocket, and push services.</p>
+            </div>
+            <div class="flow-step reveal">
+              <div class="flow-step__num">05</div>
+              <h3 data-i18n="flow.s5">State Management</h3>
+              <p data-i18n="flow.s5d">Riverpod, Bloc, or GetX — fit to the product.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-1">
+              <div class="flow-step__num">06</div>
+              <h3 data-i18n="flow.s6">Testing &amp; Debug</h3>
+              <p data-i18n="flow.s6d">Validate flows with Postman and device testing.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-2">
+              <div class="flow-step__num">07</div>
+              <h3 data-i18n="flow.s7">CI/CD</h3>
+              <p data-i18n="flow.s7d">Automate analyze, signed builds, and artifacts.</p>
+            </div>
+            <div class="flow-step reveal reveal-delay-3">
+              <div class="flow-step__num">08</div>
+              <h3 data-i18n="flow.s8">Release</h3>
+              <p data-i18n="flow.s8d">Prepare Google Play uploads and release notes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <p class="section-label reveal" data-i18n="edu.label">Background</p>
+          <h2 class="section-title reveal" data-i18n="edu.title">Education</h2>
+          <div class="edu-card reveal">
+            <div>
+              <h3 data-i18n="edu.degree">Bachelor of Information Technology</h3>
+              <p class="school" data-i18n="edu.school">
+                Ho Chi Minh City University of Transport
+              </p>
+              <p class="period" data-i18n="edu.period">
+                2022 – 2026 · Good Classification
+              </p>
+            </div>
+            <div class="edu-highlights">
+              <div>
+                <strong>GPA 3.5 / 4.0</strong>
+                <span data-i18n="edu.gpaLabel">Academic record</span>
+              </div>
+              <div>
+                <strong data-i18n="edu.scholTitle">Scholarship ×2</strong>
+                <span data-i18n="edu.scholLabel">Academic excellence awards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact__panel reveal">
+            <p class="section-label section-label--center" data-i18n="contact.label">
+              Contact
+            </p>
+            <h2 class="section-title" data-i18n="contact.title">
+              Let's build something together
+            </h2>
+            <p class="section-lead" data-i18n="contact.lead">
+              Open to Flutter / mobile roles and freelance collaboration. Say
+              hello — I'd love to hear about your product.
+            </p>
+            <div class="contact__actions">
+              <a
+                class="btn btn--primary"
+                href="mailto:vanhuy812.dev@gmail.com"
+                data-i18n="contact.email"
+                >Email me</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/PVanHuy"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="assets/cv/PhanVanHuy-CV.png"
+                download="PhanVanHuy-CV.png"
+                data-i18n="contact.cv"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact__links">
+              <a href="mailto:vanhuy812.dev@gmail.com"
+                >vanhuy812.dev@gmail.com</a
+              >
+              <a href="tel:+84978410127">0978 410 127</a>
+              <a href="https://github.com/PVanHuy" target="_blank" rel="noopener"
+                >github.com/PVanHuy</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Phan Văn Huy</span>
+        <span data-i18n="footer.line"
+          >Flutter Developer · Thu Duc, Ho Chi Minh City</span
+        >
+      </div>
+    </footer>
+
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
+      <button class="lightbox__nav lightbox__prev" id="lightboxPrev" type="button" aria-label="Previous">&#8249;</button>
+      <div class="lightbox__inner">
+        <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      </div>
+      <button class="lightbox__nav lightbox__next" id="lightboxNext" type="button" aria-label="Next">&#8250;</button>
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
