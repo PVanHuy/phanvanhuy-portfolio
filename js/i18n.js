@@ -51,6 +51,9 @@ window.PORTFOLIO_I18N = {
     "project.roleValue": "Mobile Developer / Project Developer",
     "project.platform": "Platform",
     "project.github": "View on GitHub",
+    "project.youtube": "Watch YouTube demo",
+    "project.tiktok": "Watch TikTok demo",
+    "project.demo": "App demo",
     "project.screenshots": "SOS Connect app screenshots",
     "project.problemTitle": "The problem",
     "project.problemText":
@@ -196,6 +199,9 @@ window.PORTFOLIO_I18N = {
     "project.roleValue": "Mobile Developer / Project Developer",
     "project.platform": "Nền tảng",
     "project.github": "Xem trên GitHub",
+    "project.youtube": "Xem demo YouTube",
+    "project.tiktok": "Xem demo TikTok",
+    "project.demo": "Demo ứng dụng",
     "project.screenshots": "Ảnh chụp màn hình SOS Connect",
     "project.problemTitle": "Vấn đề",
     "project.problemText":
