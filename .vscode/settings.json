@@ -1,0 +1,36 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "dart.lineLength": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "explicit",
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.associations": {
+      "*.cls": "bibtex",
+      "*.dart": "dart"
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "yaml.schemas": {
+      "file:///Users/manhle/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.lastCreateSiteAndProject": {
+      "siteId": "",
+      "projectKey": ""
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "git.confirmSync": false,
+    "workbench.editor.empty.hint": "hidden",
+    "files.trimTrailingWhitespace": true,
+  }
